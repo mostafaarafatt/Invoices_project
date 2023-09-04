@@ -53,7 +53,7 @@
                                 <h4 class="tx-20 font-weight-bold mb-1 text-white">
                                     {{ number_format(\App\Models\Invoices::sum('Total'), 2) }}
                                 </h4>
-                                <p class="mb-0 tx-12 text-white op-7">{{ \App\Models\Invoices::count() }}</p>
+                                {{-- <p class="mb-0 tx-12 text-white op-7">{{ \App\Models\Invoices::count() }}</p> --}}
                             </div>
                             <span class="float-right my-auto mr-auto">
                                 <i class="fas fa-arrow-circle-up text-white"></i>
@@ -84,7 +84,7 @@
                             <span class="float-right my-auto mr-auto">
                                 <i class="fas fa-arrow-circle-down text-white"></i>
                                 <span
-                                    class="text-white op-7">{{ round((\App\Models\Invoices::where('Value_Status', 2)->count() / \App\Models\Invoices::count()) * 100) }}%</span>
+                                    {{-- class="text-white op-7">{{ round((\App\Models\Invoices::where('Value_Status', 2)->count() / \App\Models\Invoices::count()) * 100) }}%</span> --}}
                             </span>
                         </div>
                     </div>
@@ -111,7 +111,7 @@
                             <span class="float-right my-auto mr-auto">
                                 <i class="fas fa-arrow-circle-up text-white"></i>
                                 <span class="text-white op-7">
-									{{ round((\App\Models\Invoices::where('Value_Status', 1)->count() / \App\Models\Invoices::count()) * 100) }}%
+									{{-- {{ round((\App\Models\Invoices::where('Value_Status', 1)->count() / \App\Models\Invoices::count()) * 100) }}% --}}
 								</span>
                             </span>
                         </div>
@@ -139,7 +139,7 @@
                             <span class="float-right my-auto mr-auto">
                                 <i class="fas fa-arrow-circle-down text-white"></i>
                                 <span class="text-white op-7">
-									{{ round((\App\Models\Invoices::where('Value_Status', 3)->count() / \App\Models\Invoices::count()) * 100) }}%
+									{{-- {{ round((\App\Models\Invoices::where('Value_Status', 3)->count() / \App\Models\Invoices::count()) * 100) }}% --}}
 								</span>
                             </span>
                         </div>

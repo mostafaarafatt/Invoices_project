@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ArchiveInvoicesController;
+use App\Http\Controllers\BookController;
 use App\Http\Controllers\CustomersReports;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
@@ -34,6 +35,7 @@ Route::get('/', function () {
 
 //Route::get('/{page}', [AdminController::class, 'index']);
 
+Route::resource('books', BookController::class);
 Route::resource('invoices', InvoicesController::class);
 Route::resource('sections', SectionsController::class);
 Route::resource('products',ProductsController::class);
